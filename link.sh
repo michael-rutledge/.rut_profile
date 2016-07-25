@@ -2,8 +2,8 @@
 
 #Use once to link real files from your home directory here
 
-ln -s "$(pwd)"/.vimrc "$HOME"/.vimrc
+ln -f -s "$(pwd)"/.vimrc "$HOME"/.vimrc
 
-ln -s "$(pwd)"/.bash_profile "$HOME"/.bash_profile
+ln -f -s "$(pwd)"/.bash_profile "$HOME"/.bash_profile
 
-ln -s "$(pwd)"/.gitconfig "$HOME"/.gitconfig
+ln -f -s "$(pwd)"/.gitconfig "$HOME"/.gitconfig
