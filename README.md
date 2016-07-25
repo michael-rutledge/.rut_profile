@@ -5,9 +5,9 @@
 ..-`cd` or `cd ~`
 
 2. Clone the project (make sure you don't already have a directory called 
-`.noof_profile`, silly)
+`.rut_profile`, silly)
 
-..-`git clone https://github.com/noof/.noof_profile.git`
+..-`git clone https://github.com/michael-rutledge/.rut_profile.git`
 
 3. Run the link script
 
