@@ -14,6 +14,7 @@ bind '"\eOB": history-search-forward'
 
 
 #Aliasing
-alias ls='ls -GFh'
-alias ll='ls -alh'
+alias ls='ls -CF'
+alias ll='ls -alF'
+alias la='ls -A'
 alias rebash='source ~/.bash_profile'
