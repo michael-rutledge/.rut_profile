@@ -14,6 +14,10 @@ bind '"\eOB": history-search-forward'
 
 
 #Aliasing
+if [[ $(uname -s) == Linux ]]
+then
+    alias ls='--color=auto'
+fi
 alias ls='ls -CF'
 alias ll='ls -alF'
 alias la='ls -A'
