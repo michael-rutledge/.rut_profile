@@ -18,7 +18,7 @@ if [[ $(uname -s) == Linux ]]
 then
     alias ls='ls -CF --color=auto'
 else
-    alias ls='ls -CF'
+    alias ls='ls -GFh'
 fi
 alias ll='ls -alF'
 alias la='ls -A'
