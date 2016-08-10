@@ -13,7 +13,7 @@ bind '"\eOA": history-search-backward'
 bind '"\eOB": history-search-forward'
 
 
-#Aliasing
+# general aliasing
 if [[ $(uname -s) == Linux ]]
 then
     alias ls='ls -CF --color=auto'
@@ -23,3 +23,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias rebash='source ~/.bash_profile'
+
+# git aliasing
+alias gs='git status'
+alias gc='git commit -m'
+alias ga='git add'
+alias gau='git add -u'
