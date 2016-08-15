@@ -13,9 +13,11 @@ set tabstop=4
 " number of spacesin tab when editing
 set softtabstop=4
 
+" indent is 4 spaces
+set shiftwidth=4
+
 " tabs are spaces
 set expandtab
-
 
 
 " show file stats
