@@ -23,6 +23,8 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias rebash='source ~/.bash_profile'
+alias vi='vim'
+alias v='vim'
 
 # git aliasing
 alias gs='git status'
