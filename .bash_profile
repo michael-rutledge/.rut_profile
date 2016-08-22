@@ -27,9 +27,10 @@ alias vi='vim'
 alias v='vim'
 
 # git aliasing
-alias gs='git status'
-alias gc='git commit -m'
 alias ga='git add'
 alias gau='git add -u'
-alias gu='git up'
+alias gc='git commit -m'
+alias gd='git diff'
 alias gp='git push'
+alias gs='git status'
+alias gu='git up'
