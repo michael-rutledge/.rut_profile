@@ -16,9 +16,6 @@ bind '"\eOB": history-search-forward'
 ## Advanced Options ##
 # Check the window size after each command and, if necessary, update the values of LINES and COLUMNS
 shopt -s checkwinsize
-# Ignore case on auto-completion
-# Note: bind used instead of sticking these in .inputrc
-if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
 
 
 ## cd Options ##
