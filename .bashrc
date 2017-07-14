@@ -58,6 +58,6 @@ gd () {
     git diff --color=always $@ | less -R
 }
 alias gp='git push'
-alias gs='git status'
+alias gs='git -c color.status=always status | less -R'
 alias gu='git up'
 alias gl='git log --color=always | less -R'
