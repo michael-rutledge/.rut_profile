@@ -51,7 +51,10 @@ alias v='vim'
 alias ga='git add'
 alias gau='git add -u'
 alias gc='git commit -m'
-alias gd='git diff'
+gd () {
+    git diff --color=always $@ | less -R
+}
 alias gp='git push'
 alias gs='git status'
 alias gu='git up'
+alias gl='git log --color=always | less -R'
