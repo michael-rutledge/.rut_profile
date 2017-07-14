@@ -1,5 +1,11 @@
+## pre-parsing ##
+parse_git_branch () {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 ## Interface Options ##
-export PS1="\[\033[36m\]\h\[\033[m\]:\[\033[35m\]\t_\[\033[33;1m\]\w\[\033[m\]:\$ "
+export PS1="\[\033[36m\]\h\[\033[m\]:\[\033[35m\]\t_\[\033[33;1m\]\w\[\033[m\]\
+\[\033[32m\]\$(parse_git_branch) \[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 ## History Options ##
