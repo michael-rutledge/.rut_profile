@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Use once to link real files from your home directory here
+# Use once to link real files from your home directory here
 
 ln -f -s "$(pwd)"/.vimrc "$HOME"/.vimrc
 
