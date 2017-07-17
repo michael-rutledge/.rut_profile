@@ -23,9 +23,14 @@ bind '"\eOB": history-search-forward'
 # Check the window size after each command and, if necessary, update the values of LINES and COLUMNS
 shopt -s checkwinsize
 
+## Fetch custom environment variables ##
+if [ -f "customEnv.sh" ]; then
+    source customEnv.sh
+else
+    echo "No custom environment variables found. Store custom environment variables in customEnv.sh."
+fi
 
 ## cd Options ##
-export CDPATH='.:~:/:~/Desktop/repos'
 alias cd='>/dev/null cd' #drop output of cd using CDPATH, preserving error output
 alias pd='cd $OLDPWD' #go back to previous directory
 alias ..='cd ..' #previous directory stuff
