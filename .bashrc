@@ -55,6 +55,7 @@ alias ga='git add'
 alias gau='git add -u'
 alias gb='git branch'
 alias gc='git commit -m'
+alias gch='git checkout'
 gd () {
     git diff --color=always $@ | less -R
 }
