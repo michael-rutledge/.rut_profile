@@ -24,10 +24,10 @@ bind '"\eOB": history-search-forward'
 shopt -s checkwinsize
 
 ## Fetch custom environment variables ##
-if [ -f "customEnv.sh" ]; then
-    source customEnv.sh
-else
-    echo "No custom environment variables found. Store custom environment variables in customEnv.sh."
+source ~/.rut_profile/customEnv.sh 2> /dev/null
+if [[ $? != 0 ]]; then
+echo "No custom environment variables found. \
+Store custom environment variables in customEnv.sh within .rut_profile"
 fi
 
 ## cd Options ##
