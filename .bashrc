@@ -1,11 +1,29 @@
-## pre-parsing ##
-parse_git_branch () {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+## colors ##
+nc='\033[0;m'
+b_nc='\033[1m'
+black='\033[0;30m'
+b_black='\033[1;30m'
+red='\033[0;31m'
+b_red='\033[1;31m'
+green='\033[0;32m'
+b_green='\033[1;32m'
+yellow='\033[0;33m'
+b_yellow='\033[1;33m'
+blue='\033[0;34m'
+b_blue='\033[1;34m'
+magenta='\033[0;35m'
+b_magenta='\033[1;35m'
+cyan='\033[0;36m'
+b_cyan='\033[1;36m'
+white='\033[0;37m'
+b_white='\033[1;37m'
 
 ## Interface Options ##
-export PS1="\[\033[36m\]\h\[\033[m\]:\[\033[35m\]\t_\[\033[33;1m\]\w\[\033[m\]\
-\[\033[32m\]\$(parse_git_branch) \[\033[m\]\$ "
+parse_git_branch () {       # function that fetches current git branch
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+# Shell prompt
+export PS1="${cyan}\h${nc}:${magenta}\t_${b_yellow}\w${green}\$(parse_git_branch) ${nc}\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 ## History Options ##
@@ -56,11 +74,15 @@ alias vi='vim'
 alias v='vim'
 
 ## Git options ##
+# All of these reduce git commands to just two or three letters
+# Makes typing a high volume of commands  much easier
 alias ga='git add'
 alias gau='git add -u'
 alias gb='git branch'
 alias gc='git commit -m'
 alias gch='git checkout'
+# Some commands, like git diff (below), have been modified to output to less
+# They retain all colored output, but goes away on exit, meaning less clutter on screen
 gd () {
     git diff --color=always $@ | less -R
 }
