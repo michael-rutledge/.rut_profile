@@ -39,11 +39,6 @@ Terminal appearance and functionality. Turns the default terminal into a masterp
 Bash key settings. Used only for autocomplete right now.
 
 ---
-### .gitconfig
-
-Global git settings. Mostly used as of right now for just some aliasing. Cool functions also include git log and git diff going through `less` and maintaining colors.
-
----
 ### link.sh
 
 A shell command that creates links in home directory. Use to start everything up.
