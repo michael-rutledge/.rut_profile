@@ -31,7 +31,12 @@ My vim stuff. I like colors and line numbers. Got some cool tab stuff in there a
 ---
 ### .bashrc
 
-Terminal appearance. I like colors and stuff. Also tons of aliases in there. Really helps with productivity.
+Terminal appearance and functionality. Turns the default terminal into a masterpiece of workflow and aesthetic. 
+
+---
+### .inputrc
+
+Bash key settings. Used only for autocomplete right now.
 
 ---
 ### .gitconfig
