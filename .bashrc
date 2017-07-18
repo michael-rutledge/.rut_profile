@@ -23,7 +23,8 @@ parse_git_branch () {       # function that fetches current git branch
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 # Shell prompt
-export PS1="${cyan}\h${nc}:${magenta}\t_${b_yellow}\w${green}\$(parse_git_branch) ${nc}\$ "
+export PS1="\[${cyan}\]\h\[${nc}\]:\[${magenta}\]\t_\
+\[${b_yellow}\]\w\[${green}\]\$(parse_git_branch) \[${nc}\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 ## History Options ##
