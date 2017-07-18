@@ -13,7 +13,7 @@ In short, this is just a way better terminal.
 
 ---
 
-## Installation / How to Use
+# Installation / How to Use
 
 1. Change directory to your home directory.
 
