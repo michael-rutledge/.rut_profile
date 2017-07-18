@@ -1,22 +1,22 @@
 ## colors ##
-nc='\033[0;m'
-b_nc='\033[1m'
-black='\033[0;30m'
-b_black='\033[1;30m'
-red='\033[0;31m'
-b_red='\033[1;31m'
-green='\033[0;32m'
-b_green='\033[1;32m'
-yellow='\033[0;33m'
-b_yellow='\033[1;33m'
-blue='\033[0;34m'
-b_blue='\033[1;34m'
-magenta='\033[0;35m'
-b_magenta='\033[1;35m'
-cyan='\033[0;36m'
-b_cyan='\033[1;36m'
-white='\033[0;37m'
-b_white='\033[1;37m'
+nc=$'\e[0;m'
+b_nc=$'\e[1m'
+black=$'\e[0;30m'
+b_black=$'\e[1;30m'
+red=$'\e[0;31m'
+b_red=$'\e[1;31m'
+green=$'\e[0;32m'
+b_green=$'\e[1;32m'
+yellow=$'\e[0;33m'
+b_yellow=$'\e[1;33m'
+blue=$'\e[0;34m'
+b_blue=$'\e[1;34m'
+magenta=$'\e[0;35m'
+b_magenta=$'\e[1;35m'
+cyan=$'\e[0;36m'
+b_cyan=$'\e[1;36m'
+white=$'\e[0;37m'
+b_white=$'\e[1;37m'
 
 ## Interface Options ##
 parse_git_branch () {       # function that fetches current git branch
@@ -91,3 +91,19 @@ alias gl='git log --color=always | less -R'
 alias gp='git push'
 alias gs='git -c color.status=always status | less -R'
 alias gt="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -r"
+
+## assorted bash functions ##
+# colored man page
+# mb/md,me: start,end bold
+# so,se: start,end standout
+# us,ue: start, end underline
+man () {
+    LESS_TERMCAP_mb=${b_yellow} \
+    LESS_TERMCAP_md=${b_yellow} \
+    LESS_TERMCAP_me=${nc} \
+    LESS_TERMCAP_so=${red} \
+    LESS_TERMCAP_se=${nc} \
+    LESS_TERMCAP_us=${b_green} \
+    LESS_TERMCAP_ue=${nc} \
+    command man $@
+}
