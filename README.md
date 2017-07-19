@@ -33,17 +33,7 @@ In short, this is just a way better terminal.
 
 1. If you want to utilize your own environment variables, edit the script called
 `customEnv.sh`. It is automatically created by the `link.sh` file. This way, I don't
-encroach on any environment variables you might want to use. Examples of good variables
-for you to use:
-
-    *   `CDPATH`: works like the `PATH` variable except for `cd`, allowing you to change
-        into a directory that is far away from your relative location. For example,
-        instead of calling `cd ~/Desktop/repos/yourFavoriteRepo` when you are in
-        `~/Documents/projects/somewhereFarAway`, you can set your `CDPATH` to
-        `.:~:~/Desktop/repos` so when you call `cd`, each directory given in `CDPATH` will
-        be checked, meaning you can just call `cd yourFavoriteRepo`. (Make sure to always
-        include `.` in your `CDPATH`. Otherwise you won't be able to call `cd` normally
-        because it won't check your local directory)
+encroach on any environment variables you might want to use.
 
 ---
 ### .vimrc
