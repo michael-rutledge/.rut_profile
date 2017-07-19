@@ -11,8 +11,6 @@ in case anyone else ever wanted to try this stuff out.
 
 In short, this is just a way better terminal.
 
----
-
 # Installation / How to Use
 
 1. Change directory to your home directory.
@@ -33,8 +31,8 @@ In short, this is just a way better terminal.
 
 1. You are good to go! Make any changes you want to customize it.
 
-1. If you want to utilize your own environment variables, create a script called
-`customEnv.sh`. It will automatically be run by the `.bashrc` file. This way, I don't
+1. If you want to utilize your own environment variables, edit the script called
+`customEnv.sh`. It is automatically created by the `link.sh` file. This way, I don't
 encroach on any environment variables you might want to use. Examples of good variables
 for you to use:
 

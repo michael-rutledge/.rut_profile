@@ -8,4 +8,7 @@ ln -f -s "$(pwd)"/.bashrc "$HOME"/.bashrc
 ln -f -s "$(pwd)"/.inputrc "$HOME"/.inputrc
 ln -f -s "$(pwd)"/.bash_profile "$HOME"/.bash_profile
 
+# create customEnv.sh if not already there
+touch customEnv.sh
+# finally, load bashrc
 source "$HOME"/.bashrc

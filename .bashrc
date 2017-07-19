@@ -66,6 +66,9 @@ fi
 alias ll='ls -alF' #long listing
 alias la='ls -A' #list all files
 
+## Grep Options ##
+alias grep='grep --color=always'
+
 ## Bash Profile Access Options ##
 alias rebash='source ~/.bashrc' #refresh bashrc
 alias edbash='vim ~/.bashrc' #edit bashrc
