@@ -57,7 +57,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 ## Listing Options ##
-if [[ $(uname -s) == Linux ]]
+if [[ $(uname -s) == Linux ]] #make changes to ls depending on platform
 then
     alias ls='ls -CF --color=auto'
 else
