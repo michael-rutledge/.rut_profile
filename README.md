@@ -56,11 +56,6 @@ workflow and aesthetic.
 terminals.
 
 ---
-### .inputrc
-
-Bash key settings. Used only for autocomplete right now.
-
----
 ### link.sh
 
 A shell command that creates links in home directory. Use to start everything up.
