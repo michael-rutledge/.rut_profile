@@ -22,6 +22,10 @@ In short, this is just a way better terminal.
 
     *   `git clone https://github.com/michael-rutledge/.rut_profile.git`
 
+1. Change directory into `.rut_profile`
+
+    *   `cd .rut_profile`
+
 1. Run the link script
 
     *   `./link.sh`
@@ -48,7 +52,7 @@ My vim stuff. I like colors and line numbers. Got some cool tab stuff in there a
 Terminal appearance and functionality. Turns the default terminal into a masterpiece of
 workflow and aesthetic.
 
-`.bash\_profile` is just there to source `.bashrc` when it is called automatically by some
+`.bash_profile` is just there to source `.bashrc` when it is called automatically by some
 terminals.
 
 ---
