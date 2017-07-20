@@ -45,8 +45,8 @@ shopt -s checkwinsize
 ## Fetch custom environment variables ##
 source "$HOME"/.rut_profile/customEnv.sh 2> /dev/null
 if [[ $? != 0 ]]; then
-echo "No custom environment variables found. \
-Store custom environment variables in customEnv.sh within .rut_profile"
+echo "customEnv.sh not found. Make sure .rut_profile is installed in your home directory\
+ and then run link.sh"
 fi
 
 ## cd Options ##

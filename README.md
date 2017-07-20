@@ -1,4 +1,4 @@
-# .rut_profile: What Is It?
+# .rut\_profile: What Is It?
 
 This is my personal configuration for a Unix terminal. Because I spend so much time on a
 terminal, I am always looking for ways to make the environment more productive. What you
@@ -32,19 +32,24 @@ In short, this is just a way better terminal.
 1. You are good to go! Make any changes you want to customize it.
 
 1. If you want to utilize your own environment variables, edit the script called
-`customEnv.sh`. It is automatically created by the `link.sh` file. This way, I don't
-encroach on any environment variables you might want to use.
+`customEnv.sh`. It is automatically created by the `link.sh` file and will automatically
+be run any time `.bashrc` is sourced. This way, I don't encroach on any environment
+variables you might want to use.
 
----
+# Included Files
+
 ### .vimrc
 
 My vim stuff. I like colors and line numbers. Got some cool tab stuff in there as well.
 
 ---
-### .bashrc
+### .bashrc (and .bash\_profile)
 
 Terminal appearance and functionality. Turns the default terminal into a masterpiece of
-workflow and aesthetic. 
+workflow and aesthetic.
+
+`.bash\_profile` is just there to source `.bashrc` when it is called automatically by some
+terminals.
 
 ---
 ### .inputrc
