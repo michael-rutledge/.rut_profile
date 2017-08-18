@@ -11,6 +11,11 @@ in case anyone else ever wanted to try this stuff out.
 
 In short, this is just a way better terminal.
 
+# PSA
+
+I have tried to install this profile on a terminal with oh-my-zsh installed. It didn't
+work and almost broke the terminal. *So don't use if you are already using oh-my-zsh.*
+
 # Installation / How to Use
 
 1. Change directory to your home directory
