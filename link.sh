@@ -25,5 +25,4 @@ ${LITERAL_PS1}
     echo "Creating customEnv.sh..."
 fi
 # finally, load bashrc and call rebash to just make sure
-source "$HOME"/.bashrc
-echo "Files linked. Run 'rebash' to load any changes you make."
+echo "Files linked. Run 'source ~/.bashrc' to complete installation."

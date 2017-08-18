@@ -32,7 +32,7 @@ In short, this is just a way better terminal.
 
     *   Then run it: `./link.sh`
 
-1. Run `rebash` to load changes
+1. Run `source ~/.bashrc` to load changes
 
 1. You are now up and running with the rut profile!
 
@@ -42,15 +42,12 @@ be run any time `.bashrc` is sourced. This way, I don't encroach on any environm
 variables you might want to use.
 
 1. After any future changes you make to `customEnv.sh`, be sure to run `rebash` to load
-those changes.
+those changes
+
+    *   `rebash` is a custom alias from my .bashrc that will resource the profile
 
 # Included Files
 
-### .vimrc
-
-My vim stuff. I like colors and line numbers. Got some cool tab stuff in there as well.
-
----
 ### .bashrc (and .bash\_profile)
 
 Terminal appearance and functionality. Turns the default terminal into a masterpiece of
@@ -58,6 +55,11 @@ workflow and aesthetic.
 
 `.bash_profile` is just there to source `.bashrc` when it is called automatically by some
 terminals.
+
+---
+### .vimrc
+
+My vim stuff. I like colors and line numbers. Got some cool tab stuff in there as well.
 
 ---
 ### link.sh
