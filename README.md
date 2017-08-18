@@ -28,10 +28,9 @@ In short, this is just a way better terminal.
 
 1. Run the link script
 
-    *   `./link.sh`
+    *   If you already have your own dot files that you might care about, back them up.
 
-    *   If you already have your own dot files, delete them first. (They probably sucked
-        anyway.)
+    *   Then run it: `./link.sh`
 
 1. You are good to go! Make any changes you want to customize it.
 
