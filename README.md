@@ -13,7 +13,7 @@ In short, this is just a way better terminal.
 
 # Installation / How to Use
 
-1. Change directory to your home directory.
+1. Change directory to your home directory
 
     *   `cd` or `cd ~`
 
@@ -28,16 +28,21 @@ In short, this is just a way better terminal.
 
 1. Run the link script
 
-    *   If you already have your own dot files that you might care about, back them up.
+    *   If you already have your own dot files that you might care about, back them up
 
     *   Then run it: `./link.sh`
 
-1. You are good to go! Make any changes you want to customize it.
+1. Run `rebash` to load changes
 
-1. If you want to utilize your own environment variables, edit the script called
+1. You are now up and running with the rut profile!
+
+1. If you want to utilize your own environment variables/aliases, edit the script called
 `customEnv.sh`. It is automatically created by the `link.sh` file and will automatically
 be run any time `.bashrc` is sourced. This way, I don't encroach on any environment
 variables you might want to use.
+
+1. After any future changes you make to `customEnv.sh`, be sure to run `rebash` to load
+those changes.
 
 # Included Files
 
