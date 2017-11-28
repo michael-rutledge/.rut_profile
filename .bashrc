@@ -42,8 +42,7 @@ bind 'set completion-ignore-case on'
 shopt -s checkwinsize
 
 ## cd Options ##
-alias cd='>/dev/null cd' #drop output of cd using CDPATH, preserving error output
-alias pd='cd $OLDPWD' #go back to previous directory
+alias pd='cd -' #go back to previous directory
 alias ..='cd ..' #previous directory stuff
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -84,6 +83,7 @@ gd () {
 }
 alias gl='git log --color=always | less -R'
 alias gp='git push'
+alias gpl='git pull'
 alias gs='git -c color.status=always status | less -R'
 alias gt="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -r"
 
@@ -123,7 +123,11 @@ function color_test {
 }
 
 ## One-off aliases ##
-alias ascii='man ascii'
+alias ascii='man ascii' #print out an ascii table in terminal
+hx () {
+    # make using the built-in hex viewer xxd cleaner
+    xxd $@ | less -R
+}
 
 ## Fetch custom environment variables and aliases ##
 ## Can overwrite anything I have here ##
