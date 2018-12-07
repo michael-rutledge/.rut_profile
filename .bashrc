@@ -43,9 +43,11 @@ shopt -s checkwinsize
 
 ## cd Options ##
 alias pd='cd - >/dev/null' #go back to previous directory
-alias ..='cd ..' #previous directory stuff
-alias ...='cd ../..'
-alias ....='cd ../../..'
+cdn() {
+    cdp=""
+    for i in `seq $1`; do cdp="$cdp../"; done;
+    cd "$cdp"
+}
 
 ## Listing Options ##
 if [[ $(uname -s) == Linux ]] #make changes to ls depending on platform
@@ -83,7 +85,12 @@ gd () {
 }
 alias gl='git log --color=always | less -R'
 alias gp='git push'
+alias gpo='git push origin'
+alias gpoh='git push origin HEAD'
 alias gs='git -c color.status=always status | less -R'
+gsh () {
+    git show --color=always $@ | less -R
+}
 alias gt="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all | less -r"
 
 ## assorted bash functions ##
